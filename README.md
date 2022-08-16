@@ -1,3 +1,3 @@
 # Shopify-clone-tailwind-project
 
- ## Live Link [Netlify]()
+ ## Live Link [Netlify](https://spotify-clone-10.netlify.app/)
