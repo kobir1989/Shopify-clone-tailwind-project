@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;600&display=swap" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/50ba960c66.js"
       crossorigin="anonymous"
@@ -34,21 +37,30 @@
 
           fontSize: {
             xs: ['12px'],
-            sm: ['15px'],
+            sm: ['18px'],
             lg: ['30px'],
             md: ['22px'],
             big: ['40px'],
-            xl: ['45px'],
+            xl: ['50px'],
           },
         },
       };
     </script>
+    <style>
+        .moveRight:hover i{
+           transform: translateX(9px);
+            transition: all .3s ease-in-out;
+        }
+        .fonts{
+            font-family: 'Fira Sans', sans-serif;
+        }
+    </style>
     <title>Shopify clone</title>
   </head>
-  <body class="2xl:w-10/12 2xl:mx-auto" >
+  <body class="2xl:w-10/12 2xl:mx-auto fonts">
     <header class="containar bg-lightYellow">
       <nav
-        class="h-14 xl:h-20 xl:w-10/12 xl:mx-auto px-6 flex justify-between items-center xl:px-0 bg-lightYellow text-green "
+        class="sticky top-0  h-14 xl:h-20 xl:w-10/12 xl:mx-auto px-6 flex justify-between items-center xl:px-0 bg-lightYellow text-green "
       >
         
        
@@ -93,17 +105,17 @@
       </nav>
       <!---------------header btn----------------->
       <div
-        class="lg:w-6/12 lg:mx-10 xl:mx-36 my-6 containar mx-auto  rounded-full w-full md:w-8/12 md:mx-auto  bg-gradient-to-tl p-[2px] from-[#3bf689] via-[#3bf6c1] to-[#3b92f6]"
+        class="moveRight text-center lg:w-8/12 lg:mx-10 xl:mx-36 2xl:w-7/12 xl:w-7/12  my-6 containar mx-auto   rounded-full w-10/12 md:w-8/12 md:mx-auto  bg-gradient-to-tl p-[2px] from-[#3bf689] via-[#3bf6c1] to-[#3b92f6]"
       >
         <div
-          class="bg-lightYellow rounded-full p-2 px- hover:bg-gradient-to-tl p-[2px] from-[#3bf689] via-[#3bf6c1] to-[#3b92f6]"
+          class="  bg-lightYellow rounded-full p-2 px- hover:bg-gradient-to-tl p-[2px] from-[#3bf689] via-[#3bf6c1] to-[#3b92f6]"
         >
-          <h4 class="font-medium text-sm">
-            Shopify Editions, Summer ’22 is here  <span class="hidden font-normal md:inline-flex"
+          <h4 class="font-medium text-xs md:text-sm">
+            Shopify Editions, Summer ’22 is here  <span class="hidden font-normal lg:inline-flex"
                 >| Discover 100+ new features </span>
-            <span class="move-left">
+            
               <i class="fa-solid fa-arrow-right-long mx-2"></i
-            ></span>
+           
           </h4>
         </div>
       </div>
@@ -126,7 +138,7 @@
                 placeholder="Enter your email address"
               />
               <button
-                class="md:h-12 w-full lg:w-6/12 lg:mx-4 bg-lightGreen text-white text-sm font-medium px-4 lg:px-0 py-3 rounded shadow-lg hover:bg-green"
+                class=" md:h-12 w-full lg:w-6/12 lg:mx-4 bg-lightGreen text-white text-sm font-medium px-4 lg:px-0 py-3 rounded shadow-lg hover:bg-green"
               >
                 Start free trial
               </button>
@@ -161,7 +173,7 @@
           <div class="text-white xl:text-left">
                <p class="my-4 xl:my-2 md:w-9/12 md:mx-auto xl:mx-0 xl:w-full">Create an ecommerce website backed by powerful tools that help you find customers,
                drive sales, and manage your day-to-day.</p>
-               <button class="border p-2 rounded md:my-4 xl:my-2 xl:border-none">Explore more examples <span class="move-left">
+               <button class="moveRight border p-2 rounded md:my-4 xl:my-2 xl:border-none">Explore more examples <span class="move-left">
                  <i class="fa-solid fa-arrow-right-long mx-2" ></i></span>
                </button>
               </div>
@@ -281,7 +293,7 @@
                with Point of Sale and online 
               through your website, social media, and online marketplaces.
             </p>
-            <button class="text-green font-medium text-sm xl:text-md">Explore ways to sell  <i class="fa-solid fa-arrow-right-long mx-2"></i></button>
+            <button class="moveRight text-green font-medium text-sm xl:text-md">Explore ways to sell  <i class="fa-solid fa-arrow-right-long mx-2"></i></button>
             </div>
           </div>
 
@@ -291,7 +303,7 @@
             <h2 class="text-md my-4 xl:font-medium xl:text-lg  text-green">Market your business</h2>
             <p class="text-gray text-sm my-4">Take the guesswork out of marketing with built-in tools that help you create, execute, and analyze digital marketing campaigns.
             </p>
-            <button class="text-green font-medium text-sm xl:text-md">
+            <button class="moveRight text-green font-medium text-sm xl:text-md">
               Explore how to market your business  <i class="fa-solid fa-arrow-right-long"></i>
             </button>
           </div>
@@ -308,7 +320,7 @@
              <h2 class="text-md my-4 xl:font-medium xl:text-lg  text-green">Manage everything</h2>
             <p class="text-gray text-sm my-4">Gain the insights you need to grow—use a single dashboard to manage orders, shipping, and payments anywhere you go.
             </p>
-            <button class="text-green font-medium text-sm  xl:text-md">Explore ways to sell  <i class="fa-solid fa-arrow-right-long"></i></button>
+            <button class="moveRight text-green font-medium text-sm  xl:text-md">Explore ways to sell  <i class="fa-solid fa-arrow-right-long"></i></button>
            </div>
           </div>
          </div>
@@ -324,7 +336,7 @@
                  <p class="text-sm text-gray py-4 xl:text-md">Millions of businesses in <span class="text-black font-medium">175 countries</span> around the
                    world have made over <span class="text-black font-medium"> $496 billion USD</span> in sales using Shopify.
                  </p>
-                 <button class="text-sm font-medium text-green py-4 xl:text-md">Learn more about Shopify  <i class="fa-solid fa-arrow-right-long"></i> </button>
+                 <button class="moveRight text-sm font-medium text-green py-4 xl:text-md">Learn more about Shopify  <i class="fa-solid fa-arrow-right-long"></i> </button>
            </div>
            <div class="w-10/12 mx-auto">
                <img class="w-full"  src="./img/globe.png" alt="">
@@ -344,7 +356,7 @@
           </h4>
           <img class="mx-auto py-4 xl:py-0" src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/testimonials/logo-cee-cees-closet-small-bbc2baa973603b707c4d17c8ac77b35b9097174340d500cc757354a7d868c456.png" alt="">
           <span class="text-white py-6 font-medium">Chioma | Cee Cee’s Closet NYC</span>
-          <button class="text-white my py-2 border rounded w-9/12 mx-auto font-medium"><i class="fa-solid fa-play mx-2 mt-1"></i> play Chioma and Uchenna's story</button>
+          <button class="moveRight text-white my py-2 border rounded w-9/12 mx-auto font-medium"><i class="fa-solid fa-play mx-2 mt-1"></i> play Chioma and Uchenna's story</button>
          </div>
         </div>
        </div>
@@ -379,7 +391,7 @@
           <p class="text-gray py-2">Contact support 24/7, whether you’re troubleshooting 
             issues or looking for business advice.
           </p>
-          <button class="text-lightGreen font-medium">Contact support <i class="fa-solid fa-arrow-right-long"></i>
+          <button class="moveRight text-lightGreen font-medium">Contact support <i class="fa-solid fa-arrow-right-long"></i>
           </button>
           </div>
             <div class="my-10 w-full xl:text-left">
@@ -389,7 +401,7 @@
           <p class="text-gray py-2">Add features and functionality to your 
             business with 6,000+ apps that integrate directly with Shopify.
           </p>
-          <button class="text-lightGreen font-medium">Visit the Shopify App Store <i class="fa-solid fa-arrow-right-long"></i>
+          <button class="moveRight text-lightGreen font-medium">Visit the Shopify App Store <i class="fa-solid fa-arrow-right-long"></i>
           </button>
           </div>
            
@@ -400,7 +412,7 @@
             </h4>
           <p class="text-gray py-2">Hire a Shopify expert to help you with everything from store setup to SEO.
           </p>
-          <button class="text-lightGreen font-medium">Explore the Shopify Experts Marketplace <i class="fa-solid fa-arrow-right-long"></i>
+          <button class="moveRight text-lightGreen font-medium">Explore the Shopify Experts Marketplace <i class="fa-solid fa-arrow-right-long"></i>
           </button>
           </div>
           </div>
@@ -427,7 +439,7 @@
 
         <!--------------------footer start---------------------->
 <footer class="bg-darkGreen relative">
-  <div class="absolute right-20 -top-10 text-lightGreen font-bold  "><button> Back to top <i class="fa-solid fa-arrow-up-long"></i></button> </div>
+  <div class="absolute right-20 -top-10 text-lightGreen font-bold  "><button class="moveRight"> Back to top <i class="fa-solid fa-arrow-up-long"></i></button> </div>
 <div class="w-11/12 mx-auto">
   <div class=" w-full text-white text-xs lg:text-sm  grid grid-cols-3  gap-2 py-8  md:grid-cols-5 md:place-items-center lg:w-8/12 lg:place-items-start  ">
   <div class="hover:border-b"><a href="#"></a>About</div>
